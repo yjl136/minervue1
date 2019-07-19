@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/large_icon" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_login_machine_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/machine_number" />
+
+        <TextView
+            android:id="@+id/tv_machine_mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_login_machine_tip" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="onCopyMac"
+            android:text="@string/copy" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_sn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="top"
+        android:hint="@string/enter_sn_here"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:maxLines="3"
+        android:scrollbars="horizontal"
+        android:singleLine="false"
+        android:text="e/LI9Kbo5hMs7acS2xMSyBznY48zLNnOP5ZCrtRNt+4="
+        android:textColor="@android:color/primary_text_dark" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onRegister"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="@string/register" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="onAutoRegister"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="@string/auto_register" />
+
+</LinearLayout>

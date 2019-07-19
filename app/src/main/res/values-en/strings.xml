@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Minervue</string>
+    <string name="app_is_online">Status: online</string>
+    <string name="app_is_offline">Status: offline</string>
+    <string name="contacting_server">Contacting server…</string>
+    <string name="obtaining_upgrade_info">Checking for update…</string>
+    <string name="system_setting">Settings</string>
+    <string name="video_and_photo">Record</string>
+    <string name="gas_detection">Gas detection</string>
+    <string name="browser_file">Browse files</string>
+    <string name="real_time_monitor">Monitor</string>
+    <string name="opening">Opening…</string>
+    <string name="preheating">Preheating…</string>
+    <string name="operation_failed">Device communication failed. Please contact admin.</string>
+    <string name="invalid_state">Device state is invalid. Please contact admin.</string>
+    <string name="timed_out">Device timed out. Please retry later.</string>
+    <string name="processing">Processing…</string>
+    <string name="general">General</string>
+    <string name="take_photo">Photo</string>
+    <string name="record_video">Video</string>
+    <string name="server_address">Server address</string>
+    <string name="control_port">Control port</string>
+    <string name="video_port">Video port</string>
+    <string name="audio_port">Audio port</string>
+    <string name="saved">Saved&#160;</string>
+    <string name="nothing_to_show">Nothing to show</string>
+    <string name="directory">Directory</string>
+    <string name="unknown_file">Unknown file</string>
+    <string name="switch_camera">Switch camera</string>
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
+    <string name="start_monitor">Connect</string>
+    <string name="stop_monitor">Disconnect</string>
+    <string name="being_monitored">Being monitored&#8230;</string>
+    <string name="choose_priority">Choose priority</string>
+    <string name="led">LED</string>
+    <string name="server_rejected_you">Server rejected your request</string>
+    <string name="connection_lost">Connection lost</string>
+    <string name="front_camera">Front camera</string>
+    <string name="back_camera">Back camera</string>
+    <string name="crash_log_saved_to">Crash log saved to&#160;</string>
+    <string name="server_no_respond">No respond</string>
+    <string name="waiting_for_background_service">Waiting for background service…</string>
+    <string name="machine_number">Machine ID&#160;</string>
+    <string name="enter_sn_here">Please enter serial number here</string>
+    <string name="copy">Copy</string>
+    <string name="register">Register</string>
+    <string name="auto_register">Remote Register</string>
+    <string name="fetching_remote_sn">Fetching serial number from remote…</string>
+    <string name="copied">Copied</string>
+    <string name="succeeded">Succeeded</string>
+    <string name="failed">Failed</string>
+    <string name="please_check_your_sn">Please recheck your serial number</string>
+    <string name="valid_date">Valid date&#160;</string>
+    <string name="from">From&#160;</string>
+    <string name="to">To&#160;</string>
+    <string name="delete">Delete</string>
+    <string name="delete_success">Deleted</string>
+    <string name="delete_fail">Failed to delete</string>
+    <string name="unknown_error">Unknown error</string>
+
+    <string-array name="priority">
+        <item>[1]&#160;Normal</item>
+        <item>[2]&#160;Important</item>
+        <item>[3]&#160;Emergent</item>
+    </string-array>
+
+</resources>

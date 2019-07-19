@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wison="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8" >
+
+        <TextureView
+            android:id="@+id/tv_video_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/tv_video_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp" />
+
+        <SeekBar
+            android:id="@+id/sb_zoom_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:max="100"
+            android:progress="0" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2" >
+
+        <TextView
+            android:id="@+id/tv_camera_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp" />
+
+        <com.ramy.minervue.util.MySwitch
+            android:id="@+id/sw_led"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_camera_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:textOff="@string/led"
+            android:textOn="@string/led"
+            wison:switchMinHeight="40dp"
+            wison:switchMinWidth="80dp"
+            wison:thumb="@drawable/switch_thumb_button"
+            wison:thumbTextPadding="20dp"
+            wison:trackOff="@drawable/switch_track_off_button"
+            wison:trackOn="@drawable/switch_track_on_button" />
+
+        <com.ramy.minervue.util.MySwitch
+            android:id="@+id/sw_photo_or_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sw_led"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:textOff="@string/take_photo"
+            android:textOn="@string/record_video"
+            android:thumb="@drawable/switch_thumb"
+            wison:switchMinHeight="40dp"
+            wison:switchMinWidth="80dp"
+            wison:thumb="@drawable/switch_thumb_button"
+            wison:thumbTextPadding="20dp"
+            wison:trackOff="@drawable/switch_track_off_audio_button"
+            wison:trackOn="@drawable/switch_track_on_audio_button" />
+
+        <Button
+            android:id="@+id/bt_switch_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_below="@id/sw_photo_or_video"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_button"
+            android:onClick="onSwitchCamera"
+            android:text="@string/switch_camera"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20dp"
+           />
+
+        <Spinner
+            android:id="@+id/sp_resolution"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_below="@id/bt_switch_camera"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_button" />
+
+        <Button
+            android:id="@+id/bt_video_action"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_below="@id/sp_resolution"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_button"
+            android:onClick="onRecord"
+            android:text="@string/record"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20dp"
+             />
+    </RelativeLayout>
+
+</LinearLayout>

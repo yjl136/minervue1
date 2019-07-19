@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+   <!-- 平常时候 -->
+  <item android:state_enabled="true" android:state_focused="false" android:state_pressed="false" android:drawable="@drawable/button_s" /> 
+  <!-- 获得焦点但未按下时 -->
+  <item android:state_enabled="true" android:state_focused="true" android:state_pressed="false"  android:drawable="@drawable/button_u" /> 
+  <!-- 按下时 -->
+  <item android:state_enabled="true" android:state_pressed="true"  android:drawable="@drawable/button_u" /> 
+  <!-- 松开时 -->
+  <item android:state_enabled="false" android:drawable="@drawable/button_s" 
+      />
+</selector>

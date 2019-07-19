@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ramy.minervue"
+    android:targetSandboxVersion="2"
+    android:versionCode="15"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.ramy.minervue.app.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ramy.minervue.app.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
+        <activity
+            android:name="com.ramy.minervue.app.SettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
+        <activity
+            android:name="com.ramy.minervue.app.VideoActivity"
+            android:configChanges="locale|orientation|screenSize|keyboard|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.ramy.minervue.app.GasActivity"
+            android:configChanges="locale|orientation|screenSize|keyboard|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
+        <activity
+            android:name="com.ramy.minervue.app.GasPhotographerActivity"
+            android:configChanges="locale|orientation|screenSize|keyboard|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.ramy.minervue.app.MonitorActivity"
+            android:configChanges="locale|orientation|screenSize|keyboard|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.ramy.minervue.app.FileListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
+        <activity
+            android:name="com.ramy.minervue.app.BugReportActivity"
+            android:configChanges="locale|screenSize|keyboard|keyboardHidden"
+            android:process=":bug_report_process"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
+
+        <receiver android:name="com.ramy.minervue.app.ServiceLoader" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.ramy.minervue.sync.WifiStateReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.ramy.minervue.app.MainService$AlarmReceiver" />
+
+        <service android:name="com.ramy.minervue.app.MainService" />
+    </application>
+
+</manifest>

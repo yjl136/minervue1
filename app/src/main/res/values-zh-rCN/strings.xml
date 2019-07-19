@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">音视频现场管理系统</string>
+    <string name="app_is_online">当前状态：在线</string>
+    <string name="app_is_offline">当前状态：离线</string>
+    <string name="contacting_server">正在联系服务器…</string>
+    <string name="obtaining_upgrade_info">正在获取升级信息…</string>
+    <string name="system_setting">系统设置</string>
+    <string name="video_and_photo">录像/拍照</string>
+    <string name="gas_detection">环境检测</string>
+    <string name="browser_file">浏览文件</string>
+    <string name="real_time_monitor">实时监控</string>
+    <string name="opening">正在开启…</string>
+    <string name="preheating">预热中…</string>
+    <string name="operation_failed">设备状态异常,请重新测试.</string>
+    <string name="invalid_state">设备状态异常,请重新测试.</string>
+    <string name="timed_out">设备操作超时,请稍后重试.</string>
+    <string name="processing">正在处理…</string>
+    <string name="general">通用</string>
+    <string name="take_photo">拍照</string>
+    <string name="save">保存</string>
+    <string name="record_video">录像</string>
+    <string name="server_address">服务器地址</string>
+    <string name="control_port">控制端口</string>
+    <string name="video_port">视频端口</string>
+    <string name="audio_port">音频端口</string>
+    <string name="saved">已保存</string>
+    <string name="nothing_to_show">没有可供显示的内容</string>
+    <string name="directory">文件夹</string>
+    <string name="unknown_file">未知文件</string>
+    <string name="switch_camera">切换摄像头</string>
+    <string name="record">拍   摄</string>
+    <string name="stop">停止</string>
+    <string name="start_monitor">发起监控</string>
+    <string name="stop_monitor">结束监控</string>
+    <string name="being_monitored">正在监控&#8230;</string>
+    <string name="choose_priority">请选择优先级</string>
+    <string name="led">照明</string>
+    <string name="server_rejected_you">服务器拒绝了您的请求。</string>
+    <string name="connection_lost">网络连接出现错误，已经终止</string>
+    <string name="front_camera">前置摄像头</string>
+    <string name="back_camera">后置摄像头</string>
+    <string name="crash_log_saved_to">应用意外崩溃，日志已存至</string>
+    <string name="server_no_respond">服务器无响应</string>
+    <string name="waiting_for_background_service">等待后台服务启动…</string>
+    <string name="machine_number">机器识别码：</string>
+    <string name="enter_sn_here">请在此输入注册码</string>
+    <string name="copy">复制</string>
+    <string name="register">注册</string>
+    <string name="auto_register">远程注册</string>
+    <string name="fetching_remote_sn">正在远程获取注册序列号…</string>
+    <string name="copied">已复制</string>
+    <string name="succeeded">成功</string>
+    <string name="failed">失败</string>
+    <string name="please_check_your_sn">请检查您的注册序列号</string>
+    <string name="valid_date">注册有效期：</string>
+    <string name="from">从&#160;</string>
+    <string name="to">至&#160;</string>
+    <string name="delete">删除</string>
+    <string name="delete_success">已删除</string>
+    <string name="delete_fail">删除失败</string>
+    <string name="unknown_error">未知错误</string>
+    <string name="image_file">图像文件</string>
+    <string name="pub_file">下发文件</string>
+    <string name="sensor_file">传感器文件</string>
+    <string name="video_file">录像文件</string>
+    <string name="tv_new">新</string>
+	<string name="confirm">确定</string>
+   	<string name="input_address">请  输  入  记  录  地  点</string>
+   	<string name="loading">正在获取数据…</string>
+   	 <string name="error_tip">状态提示</string>
+   	<string name="file_save_success">文件保存成功</string>
+    <string name="file_save_fail">文件保存失败</string>
+    <string name="adress">请输入地点,地点不能为空</string>
+     <string name="fileOrderByDate">时间排序</string>
+    <string name="fileOrderByLeve">等级排序</string>
+    <string name="browse">横屏浏览</string>
+    <string name="browse_l">竖屏浏览</string>
+    <string-array name="priority">
+        <item>[1]&#160;普通</item>
+        <item>[2]&#160;重要</item>
+        <item>[3]&#160;紧急</item>
+    </string-array>
+
+</resources>

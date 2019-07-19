@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/general">
+        <EditTextPreference android:key="serverAddr"
+            android:title="@string/server_address"
+            android:defaultValue="192.168.201.160" />
+        <EditTextPreference android:key="controlPort"
+            android:inputType="numberDecimal"
+            android:digits="0123456789"
+            android:title="@string/control_port"
+            android:defaultValue="8000" />
+        <EditTextPreference android:key="videoPort"
+            android:inputType="numberDecimal"
+            android:digits="0123456789"
+            android:title="@string/video_port"
+            android:defaultValue="8100" />
+        <EditTextPreference android:key="audioPort"
+            android:inputType="numberDecimal"
+            android:digits="0123456789"
+            android:title="@string/audio_port"
+            android:defaultValue="8200" />
+    </PreferenceCategory>
+</PreferenceScreen>
